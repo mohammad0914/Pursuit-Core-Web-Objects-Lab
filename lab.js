@@ -22,7 +22,7 @@ let eveAppleCount /* = Your code here */
 
 //assert(applesObj["Adam"] === 4)
 
-// c. Set calAndDanAppleCount equal to the sum of both of those
+// c. Set calAndDanAppleCount equal to how many apples Cal and Dan have combined
 
 let calAndDanAppleCount /*= Your code here */
 
