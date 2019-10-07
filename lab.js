@@ -130,7 +130,7 @@ var highestScoringName = ""
 var cubeObj = {}
 
 // Your code here
-//assert(cubeObj.length === 20)
+//assert(Object.keys(cubeObj).length === 20)
 //assert(cubeObj[1] === 1)
 //assert(cubeObj[2] === 8)
 //assert(cubeObj[3] === 27)
