@@ -91,29 +91,30 @@ var peopleWithScores = [
     {
         firstName: "Calvin",
         lastName: "Newton",
-        score: "13"
+        score: 13
     },
     {
         firstName: "Garry",
         lastName: "Mckenzie",
-        score: "23"
+        score: 23
     },
     {
         firstName: "Leah",
         lastName: "Rivera",
-        score: "10"
+        score: 10
     },
     {
         firstName: "Sonja",
         lastName: "Moreno",
-        score: "3"
+        score: 3
     },
     {
         firstName: "Noel",
         lastName: "Bowen",
-        score: "16"
+        score: 16
     }
 ]
+
 
 var highestScoringName = ""
 
