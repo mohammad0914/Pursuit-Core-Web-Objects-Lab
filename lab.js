@@ -31,7 +31,7 @@ let calAndDanAppleCount /*= Your code here */
 // d. Set all the values in applesObj to 0
 
 // Your code here
-//for value of applesObj {
+//for (value of applesObj) {
 //    assert(value === 0)
 //}
 
