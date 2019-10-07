@@ -32,7 +32,7 @@ let calAndDanAppleCount /*= Your code here */
 
 // Your code here
 
-//for (key in applesObj) {
+//for (let key in applesObj) {
 //   assert(applesObj[key] === 0)
 //}
 
