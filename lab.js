@@ -50,10 +50,13 @@ let russiaCapital /* = Your code here (Replace "" with your solution)*/
 //assert(russiaCapital === "Moscow")
     
 // b. Add a new key value pair "Jamaica" and its capital "Kingston"
+
 // Your code here
+
 //assert(citiesObj["Jamaica"] === "Kingston")
 
 // c. Add a new key value pair "Indonesia" and its capital "Jakarta"
+
 // Your code here
 
 //assert(citiesObj["Indonesia"] === "Jakarta")
@@ -83,10 +86,14 @@ var authorScores = {}
 
 
 // b. Add an additional author named “Erik Larson” with an assigned score of 9.2.
+
+// Your code here
+
 //assert(authorScores["Erik Larson"] === 9.2)
 
 // Question Four
 // You are given an array of objects. Each object in the array describes the score of a person. Find the person with the best score and print his full name.
+
 var peopleWithScores = [
     {
         firstName: "Calvin",
@@ -115,7 +122,6 @@ var peopleWithScores = [
     }
 ]
 
-
 var highestScoringName = ""
 
 // Your code here
@@ -130,6 +136,7 @@ var highestScoringName = ""
 var cubeObj = {}
 
 // Your code here
+
 //assert(Object.keys(cubeObj).length === 20)
 //assert(cubeObj[1] === 1)
 //assert(cubeObj[2] === 8)
