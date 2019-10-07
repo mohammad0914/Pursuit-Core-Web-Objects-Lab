@@ -148,3 +148,5 @@ var mostFrequentChar
 // Your code here
 
 //assert(mostFrequentChar === "e")
+
+console.log("Ran with 0 errors")
