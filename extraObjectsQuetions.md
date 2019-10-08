@@ -40,12 +40,13 @@ let spanishNumbers = {1: "uno", 2: "dos", 3: "tres", 4: "quatro", :5: "cinco"}
 ```
 
 a. Write a code block that takes an object variable and stores the *keys* in an array.  Then log the array.
+
 b. Write a code block that takes an object variable and stores the *values* in an array.  Then log the array.
 
 
 ## Question 4
 
-Write a code block the logs the number of properties an object has.
+Write a code block that logs the number of properties an object has.
 
 ## Question 5
 
@@ -101,6 +102,7 @@ let people = [
 ]
 ```
 a. Create an array of strings called `firstNames` that contains only the values for `“firstName”` from each object.
+
 b. Create an array of strings called `fullNames` that contains the values for `“firstName”` and `“lastName”` from the object separated by a space.
 
 
