@@ -20,6 +20,7 @@ const {
   mostCommonElement,
   updateList,
   deleteKey,
+  propertyCount,
 } = require("../problems/objects");
 
 describe("eveAppleCount", () => {
@@ -501,5 +502,15 @@ describe("deleteKey", ()=> {
         expect(result).toBe(cereal);
         expect(cereal).toEqual({ sam: "toucan" });
         expect(cereal["tony"]).toBeUndefined()
+    })
+});
+
+describe("propertyCount", () => {
+    test("returns the correct number of properites", () => {
+        expect(
+          propertyCount({ "Ed Sheeran": "guitar", "Ray Charles": "piano" }).toBe(2)
+        );
+        expect(propertyCount({a: 2, b: 3, c: 1})).toBe(3)
+        expect(propertyCount({})).toBe(0)
     })
 });

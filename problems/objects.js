@@ -228,6 +228,13 @@ const updateList = () => {};
 
  const deleteKey = () => {};
 
+
+ /**
+  * Takes in an object and returns the number of 
+  * properties it has. 
+  */
+ const propertyCount = () => {};
+
 module.exports = {
   eveAppleCount,
   appleCount,
@@ -249,4 +256,5 @@ module.exports = {
   mostCommonElement,
   updateList,
   deleteKey,
+  propertyCount,
 };
