@@ -364,62 +364,142 @@ describe("authorScores", () => {
 });
 
 describe("bestScore", () => {
-    test("returns the full name of the person with the best score", () => {
-        const peopleWithScores = [
-          {
-            firstName: "Calvin",
-            lastName: "Newton",
-            score: 13,
-          },
-          {
-            firstName: "Garry",
-            lastName: "Mckenzie",
-            score: 23,
-          },
-          {
-            firstName: "Leah",
-            lastName: "Rivera",
-            score: 10,
-          },
-          {
-            firstName: "Sonja",
-            lastName: "Moreno",
-            score: 3,
-          },
-          {
-            firstName: "Noel",
-            lastName: "Bowen",
-            score: 16,
-          },
-        ];
-        expect(bestScore(peopleWithScores)).toBe("Garry Mckenzie");
-    })
-})
-
-describe("cubeObj", () => {
-    test("returns an object with keys 1 - 20 and all values cubed", () => {
-        const res = cubeObj();
-        expect(Object.keys(res).length).toBe(20)
-        expect(res[1]).toBe(1)
-        expect(res[2]).toBe(8)
-        expect(res[3]).toBe(27)
-        expect(res[14]).toBe(2744)
-        expect(res[20]).toBe(8000)
-    })
-})
-
-
-describe("countAandE", () => {
-    test("still shows zero when no a's or e's are found", () => {
-        expect(countAandE("dirt")).toEqual({a: 0, e: 0});
-    })
-    test("ignores capitalization", () => {
-        expect(countAandE("eEaA")).toEqual({a: 2, e: 2})
-    })
-    test("works fully", () => {
-        expect(countAandE("BE a big Dreamer!")).toEqual({a: 2, e: 3})
-        expect(countAandE("cats")).toEqual({a: 1, e: 0})
-    })
+  test("returns the full name of the person with the best score", () => {
+    const peopleWithScores = [
+      {
+        firstName: "Calvin",
+        lastName: "Newton",
+        score: 13,
+      },
+      {
+        firstName: "Garry",
+        lastName: "Mckenzie",
+        score: 23,
+      },
+      {
+        firstName: "Leah",
+        lastName: "Rivera",
+        score: 10,
+      },
+      {
+        firstName: "Sonja",
+        lastName: "Moreno",
+        score: 3,
+      },
+      {
+        firstName: "Noel",
+        lastName: "Bowen",
+        score: 16,
+      },
+    ];
+    expect(bestScore(peopleWithScores)).toBe("Garry Mckenzie");
+  });
 });
 
-describe("countOccurance")
+describe("cubeObj", () => {
+  test("returns an object with keys 1 - 20 and all values cubed", () => {
+    const res = cubeObj();
+    expect(Object.keys(res).length).toBe(20);
+    expect(res[1]).toBe(1);
+    expect(res[2]).toBe(8);
+    expect(res[3]).toBe(27);
+    expect(res[14]).toBe(2744);
+    expect(res[20]).toBe(8000);
+  });
+});
+
+describe("countAandE", () => {
+  test("still shows zero when no a's or e's are found", () => {
+    expect(countAandE("dirt")).toEqual({ a: 0, e: 0 });
+  });
+  test("ignores capitalization", () => {
+    expect(countAandE("eEaA")).toEqual({ a: 2, e: 2 });
+  });
+  test("works fully", () => {
+    expect(countAandE("BE a big Dreamer!")).toEqual({ a: 2, e: 3 });
+    expect(countAandE("cats")).toEqual({ a: 1, e: 0 });
+  });
+});
+
+describe("countOccurance", () => {
+  test("returns an objects with keys as letters and values as counts", () => {
+    expect(countOccurance("A good snake")).toEqual({
+      a: 2,
+      " ": 2,
+      g: 1,
+      o: 2,
+      d: 1,
+      s: 1,
+      n: 1,
+      k: 1,
+      e: 1,
+    });
+    expect(countOccurance("HELLO world")).toEqual({
+      h: 1,
+      e: 1,
+      l: 3,
+      o: 2,
+      " ": 1,
+      w: 1,
+      r: 1,
+      d: 1,
+    });
+  });
+});
+
+describe("countOccuranceNoSpaces", () => {
+  test("returns an objects with keys as letters and values as counts. Ignores spaces.", () => {
+    expect(countOccuranceNoSpaces("A good snake")).toEqual({
+      a: 2,
+      g: 1,
+      o: 2,
+      d: 1,
+      s: 1,
+      n: 1,
+      k: 1,
+      e: 1,
+    });
+    expect(countOccuranceNoSpaces("HELLO world")).toEqual({
+      h: 1,
+      e: 1,
+      l: 3,
+      o: 2,
+      w: 1,
+      r: 1,
+      d: 1,
+    });
+  });
+});
+
+describe("mostCommonElement", () => {
+  test("returns the most common element", () => {
+    expect(mostCommonElement(["cat", "bird", "cat"])).toBe("cat");
+    expect(mostCommonElement([2, 1, 1, 1, 3, 2])).toBe(1);
+  });
+});
+
+describe("updateList", () => {
+  test("gives new array with updated values", () => {
+    expect(
+      updateList({ "Ed Sheeran": "guitar", "Ray Charles": "piano" }, [
+        "Ed Sheeran",
+        "John Lennon",
+        "Ray Charles",
+      ])
+    ).toEqual(["guitar", "John Lennon", "piano"]);
+    expect(updateList({}, [])).toEqual([]);
+    expect(
+      updateList({ tony: "tiger", sam: "toucan" }, ["nelly", "tony"])
+    ).toEqual(["nelly", "tiger"]);
+  });
+});
+
+describe("deleteKey", ()=> {
+    test("deletes key from object", () => {
+        const cereal = { tony: "tiger", sam: "toucan" };
+        const result = deleteKey(cereal, "tony")
+        expect(result).toBe(cereal);
+        expect(cereal).toEqual({ sam: "toucan" });
+        expect(cereal["tony"]).toBeUndefined()
+    })
+});

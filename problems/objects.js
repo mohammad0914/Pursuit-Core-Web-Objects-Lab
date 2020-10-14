@@ -174,7 +174,7 @@ const countAandE = () => {};
  * Takes in a string and returns an object with
  * the count occurrence of each character.
  * @param {string} - str: "A good snake"
- * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, " ": 2, s: 1, n:a, k:1, e: 1}
+ * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, " ": 2, s: 1, n:1, k:1, e: 1}
  */
 
 const countOccurance = () => {};
