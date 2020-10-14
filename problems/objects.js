@@ -2,8 +2,8 @@
  * Takes in an object with peoples names as the keys and
  * the number of apples they have as values. Return the number
  * of apples that "Eve" has.
- * @param {object}
- * @returns {number} the number of apples Eve has.
+ * @param {Object} peopleWithApples
+ * @returns {number} The number of apples Eve has.
  */
 
 const eveAppleCount = () => {};
@@ -14,9 +14,9 @@ const eveAppleCount = () => {};
  * name. Return the number
  * of apples that the person passed in has.
  * If the person does not exist in the object it should return 0.
- * @param {object} - apple object with names and numbers
- * @param {string} - name of person
- * @returns {number} -  the number of apples name has.
+ * @param {Object} peopleWithApples
+ * @param {string} name - name of person
+ * @returns {number} The number of apples name has.
  *
  * Is there a difference between using string notation vs
  * bracket notation? Try them both.
@@ -31,9 +31,9 @@ const appleCount = () => {};
  * Reassign her number of apples to the new value and then return
  * the original object.
  *
- * @param {object}
- * @param {number} - new number of apples
- * @returns {object} the updated object.
+ * @param {Object} peopleWithApples
+ * @param {number} appleCount - new number of apples
+ * @returns {Object} The updated object.
  */
 
 const eveAppleSet = () => {};
@@ -43,10 +43,10 @@ const eveAppleSet = () => {};
  * the number of apples they have as values. Also takes in the argument of someone's
  * name, and the argument newNumberApple .
  * Update the object to have the name pointing to the newNumberApple
- * @param {object} - apple object with names and numbers
- * @param {string} - name of person
- * @param {number} - number of apples
- * @returns {object} -  updated object.
+ * @param {Object} peopleWithApples - apple object with names and numbers
+ * @param {string} name - name of person
+ * @param {number} appleCount - number of apples
+ * @returns {Object} The updated object.
  *
  */
 
@@ -56,8 +56,8 @@ const appleSet = () => {};
  * Takes in an object with peoples names as the keys and
  * the number of apples they have as values.
  * Should return the total number of apples for Adam and Eve.
- * @param {object} - apple object with names and numbers
- * @returns {number} -  total number of apples for adam and eve
+ * @param {Object} peopleWithApples - apple object with names and numbers
+ * @returns {number} Sum of Adam and Eve's apples.
  *
  */
 
@@ -67,8 +67,8 @@ const adamAndEveApples = () => {};
  * Takes in an object with peoples names as the keys and
  * the number of apples they have as values.
  * Returns the sum of all apples
- * @param {object} - apple object with names and numbers
- * @returns {number} -  sum of all apples
+ * @param {Object} peopleWithApples - apple object with names and numbers
+ * @returns {number} Sum of all apples
  *
  */
 
@@ -78,8 +78,8 @@ const appleSum = () => {};
  * Takes in an object with peoples names as the keys and
  * the number of apples they have as values.
  * Reset all the apple values to 0 and return the object.
- * @param {object} - apple object with names and numbers
- * @returns {object} -  object with values set to zero.
+ * @param {Object} peopleWithApples - apple object with names and numbers
+ * @returns {Object} Object with values set to zero.
  *
  */
 
@@ -89,8 +89,8 @@ const appleSetToZero = () => {};
  * Takes in an object of countries and their capitals.
  * Return the capital of Russia.
  *
- * @param {object} - countries and capitals
- * @returns {string} - capital of Russia
+ * @param {Object} countriesAndCapitals - countries and capitals
+ * @returns {string} Capital of Russia
  */
 
 const russiaCapital = () => {};
@@ -100,9 +100,9 @@ const russiaCapital = () => {};
  * Takes in a country
  * Return the capital of country given.
  *
- * @param {object} - countries and capitals
- * @param {string} - country
- * @returns {string} - capital of country
+ * @param {Object} countriesAndCapitals - countries and capitals
+ * @param {string} country
+ * @returns {string} Capital of country
  */
 
 const getCapital = () => {};
@@ -112,8 +112,8 @@ const getCapital = () => {};
  * and adds the key value pair "Jamaica" and "Kingston"
  * Return the original object.
  *
- * @param {object} - countries and capitals
- * @returns {object} - countries now with Jamaica
+ * @param {Object} countriesAndCapitals - countries and capitals
+ * @returns {Object} countriesAndCapitals now with Jamaica
  */
 
 const addsJamaica = () => {};
@@ -124,10 +124,10 @@ const addsJamaica = () => {};
  * added to the object.
  * Return the original object.
  *
- * @param {object} - countries and capitals
- * @param {string} - country
- * @param {string} - capital
- * @returns {object} - countries
+ * @param {Object} countriesAndCapitals - countries and capitals
+ * @param {string} country
+ * @param {string} capital
+ * @returns {Object} countriesAndCapitals
  */
 
 const addsCountry = () => {};
@@ -137,8 +137,8 @@ const addsCountry = () => {};
  * of inner array is score.
  * Return an object where the keys are the authorNames and
  * the values are the scores.
- * @param {array} - array of arrays [["Mark Twain", 8.9], ["Nathaniel Hawthorne", 5.1]]
- * @returns {object} - {"Mark Twain": 8.9, "Nathaniel Hawthorne": 5.1}
+ * @param {Array[]} authors - array of arrays [["Mark Twain", 8.9], ["Nathaniel Hawthorne", 5.1]]
+ * @returns {Object} {"Mark Twain": 8.9, "Nathaniel Hawthorne": 5.1}
  */
 
 const authorScores = () => {};
@@ -147,8 +147,8 @@ const authorScores = () => {};
  * You are given an array of objects.
  * Each object in the array describes the score of a person.
  *  Find the person with the best score and return their full name.
- * @param {array} - array of objects [ { firstName: "Calvin", lastName: "Newton", score: 13} ...]
- * @returns {string} - the full name of person with best score.
+ * @param {Object[]} peopleAndScores - array of objects [ { firstName: "Calvin", lastName: "Newton", score: 13} ...]
+ * @returns {string} The full name of person with best score.
  */
 
 const bestScore = () => {};
@@ -156,7 +156,7 @@ const bestScore = () => {};
 /**
  * Returns an object where the keys are numbers 1 through 20,
  * and their respective values is key cubed (num * num * num).
- * @returns {object} - {1: 1, 2: 8, 3: 27...}
+ * @returns {Object} {1: 1, 2: 8, 3: 27...}
  */
 
 const cubeObj = () => {};
@@ -164,8 +164,8 @@ const cubeObj = () => {};
 /**
  * Takes in a string and returns an object with
  * the number of a's and the number of e's.
- * @param {string} - str: "A good snake"
- * @returns {object} - counts of e and a. {a: 2, e: 1}
+ * @param {string} str - "A good snake"
+ * @returns {Object} Counts of e and a. {a: 2, e: 1}
  */
 
 const countAandE = () => {};
@@ -173,8 +173,8 @@ const countAandE = () => {};
 /**
  * Takes in a string and returns an object with
  * the count occurrence of each character.
- * @param {string} - str: "A good snake"
- * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, " ": 2, s: 1, n:1, k:1, e: 1}
+ * @param {string} str -  "A good snake"
+ * @returns {Object} Counts of all characters: {a: 2, g: 1, o: 2, d:1, " ": 2, s: 1, n:1, k:1, e: 1}
  */
 
 const countOccurance = () => {};
@@ -183,16 +183,16 @@ const countOccurance = () => {};
  * Takes in a string and returns an object with
  * the count occurrence of each character.
  * Skips spaces
- * @param {string} - str: "A good snake"
- * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, s: 1, n:a, k:1, e: 1}
+ * @param {string} str - "A good snake"
+ * @returns {Object} Counts all characters except spaces  {a: 2, g: 1, o: 2, d:1, s: 1, n:a, k:1, e: 1}
  */
 
 const countOccuranceNoSpaces = () => {};
 
 /**
  * Takes in an array and returns the most common element.
- * @param {array} - array of elements
- * @returns {number || string} - most common element
+ * @param {*[]} array - array of elements
+ * @returns {(number|string)} Most common element
  */
 
 const mostCommonElement = () => {};
@@ -210,9 +210,9 @@ const mostCommonElement = () => {};
  * Output:
  * ["guitar", "John Lennon", "piano"]
  *
- * @param {object}
- * @param {array}
- * @returns {array}
+ * @param {Object} pairs
+ * @param {string[]} arr
+ * @returns {string[]} Elements or their pair values. 
  */
 
 const updateList = () => {};
@@ -221,9 +221,9 @@ const updateList = () => {};
  * Takes in an object and a key. 
  * It should delete the key value pair from the object and 
  * return the changed object.
- * @param {object}
- * @param {string}
- * @returns {object}
+ * @param {Object}
+ * @param {string} key
+ * @returns {Object} The Object without the key. 
  */
 
  const deleteKey = () => {};
@@ -232,6 +232,8 @@ const updateList = () => {};
  /**
   * Takes in an object and returns the number of 
   * properties it has. 
+  * @param {Object} obj
+  * @returns {number} Number of properties.
   */
  const propertyCount = () => {};
 

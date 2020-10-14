@@ -1,6 +1,6 @@
 /**
  * Takes in a cat object and returns it's species.
- * @param {object} - catObj
+ * @param {Object} catObj
  * @returns {string} - species
  */
 
@@ -9,9 +9,9 @@ const catSpecies = () => {};
 /**
  * Takes in a cat object and a color. Add the key
  * color to the object pointing to the color passed in.
- * @param {object} - catObj
- * @param {string} - color
- * @returns {object} - catObj
+ * @param {Object} catObj
+ * @param {string} color
+ * @returns {Object} catObj
  */
 
 const giveCatColor = () => {};
@@ -19,8 +19,9 @@ const giveCatColor = () => {};
 /**
  * Takes in a cat object and returns it's 'texture', if it has that property.
  * If it does not have the 'texture' property "throw Error('Does not have texture property')"
- * @param {object} - catObj
- * @returns {string} - texture or throws error.
+ * @param {Object} catObj
+ * @returns {string} Texture or throws error.
+ * @throws {Error} 'Does not have texture property'
  */
 
 const catTexture = () => {};
@@ -39,16 +40,16 @@ const catTexture = () => {};
 /**
  * Takes in an object and returns all the keys as an array.
  * Must be done without Object.keys
- * @param {object}
- * @returns {array} - all the keys from the object
+ * @param {Object}
+ * @returns {string[]} All the keys from the object
  */
 const objKeys = () => {};
 
 /**
  * Takes in an object and returns all the keys as an array.
  * Must use Object.keys .
- * @param {object}
- * @returns {array} - all the keys from the object
+ * @param {Object}
+ * @returns {string[]} All the keys from the object
  */
 
 const objKeys2 = () => {};
@@ -56,16 +57,16 @@ const objKeys2 = () => {};
 /**
  * Takes in an object and returns all the values as an array.
  *  Must NOT use Object.values .
- * @param {object}
- * @returns {array} - all the keys from the object
+ * @param {Object}
+ * @returns {*[]} All the values from the object
  */
 const objValues = () => {};
 
 /**
  * Takes in an object and returns all the values as an array.
  * Must use Object.values .
- * @param {object}
- * @returns {array} - all the values from the object
+ * @param {Object}
+ * @returns {*[]} All the values from the object
  */
 
 const objValues2 = () => {};
@@ -73,8 +74,8 @@ const objValues2 = () => {};
 /**
  * Takes in an array of film objects and
  * returns a new array with only the directors listed.
- * @param {array} - films
- * @returns {array} - only the directors
+ * @param {Object[]} films
+ * @returns {string[]} Only the directors
  */
 
 const findDirectors = () => {};
@@ -84,8 +85,8 @@ const findDirectors = () => {};
  * firstName and lastName. Return a new array that has
  * everybody's full name.
  * firstName and lastName should be separated by one space only.
- * @param {array} - array of person objects.
- * @returns {array} - full names.
+ * @param {Object[]} people - Array of person objects.
+ * @returns {string[]} Full names.
  */
 
 const fullNames = () => {};
@@ -97,8 +98,8 @@ const fullNames = () => {};
  * Return the name and total amount of money deposited
  * of the person who received the most money.
  *
- * @param {object}
- * @returns {string}
+ * @param {Object} peopleAndDeposits
+ * @returns {string} Largest earner. 
  *
  * Exp Input:
  *  {
@@ -119,8 +120,8 @@ const largestEarner = () => {};
  * each key and value pair are together but separated by " & "
  * Exp Input: {"Peanut Butter": "Jelly"}
  * Output: ["Peanut Butter & Jelly"]
- * @param {object}
- * @returns {array}
+ * @param {Object} groups
+ * @returns {string[]}
  */
 
 const pairs = () => {};
@@ -137,16 +138,16 @@ const pairs = () => {};
  * 'You still need to watch "Jaws" by director Steven Spielberg.'
  * ]
  *
- * @param {array} - array of filmObj
- * @returns {array} - array of sentences about films
+ * @param {Object[]} films - Array of film objects.
+ * @returns {string[]} Array of sentences about films
  */
 const movieList = () => {};
 
 /**
  * Takes in a sentence and returns most
  * frequent word that is longer than 5 characters.
- * @param {string} - Sentence or passage
- * @returns {string} - most frequent word longer than 5 characters
+ * @param {string} sentence Sentence or passage
+ * @returns {string} Most frequent word longer than 5 characters
  */
 
 const mostFreqWordGreaterThanFive = () => {};
@@ -154,9 +155,9 @@ const mostFreqWordGreaterThanFive = () => {};
 /**
  * Takes in a sentence and a length.
  * Returns the most frequent word that is longer than the length.
- * @param {string} - Sentence or passage
- * @param {number} - length
- * @returns {string} - most frequent word longer than length
+ * @param {string} sentence - Sentence or passage
+ * @param {number} length
+ * @returns {string} Most frequent word longer than length
  */
 
 const mostFreqWordGreaterThanLength = () => {};
@@ -164,8 +165,8 @@ const mostFreqWordGreaterThanLength = () => {};
 /**
  * Takes in a sentence and returns the second most common letter
  * used from the english alphabet.
- * @param {string} - sentence
- * @returns {string} - second most used letter.
+ * @param {string} sentence
+ * @returns {string} Second most used letter.
  */
 
 const secondMostFrequentLetter = () => {};

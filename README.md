@@ -2,7 +2,7 @@
 
 
 # Objects Lab
-Get comfortable working with objects and iterating through them. 
+Get comfortable working with objects and iterating through them. [Documentation link](https://joinpursuit.github.io/Pursuit-Core-Web-Objects-Lab/)
 
 ## Learning Objectives 
  * Be able to key / index into an object. 
@@ -13,9 +13,9 @@ Get comfortable working with objects and iterating through them.
 
  ## Prerequisites 
   * Experience with values types and operators 
-  * Familarity with JS loops 
-  * Familiarty with arrays. 
-  * Familiarty with strings. 
+  * Familiarity with JS loops 
+  * Familiarity with arrays. 
+  * Familiarity with strings. 
 
   ___
 
