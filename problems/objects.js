@@ -105,7 +105,7 @@ const russiaCapital = () => {};
  * @returns {string} - capital of country
  */
 
-const russiaCapital = () => {};
+const getCapital = () => {};
 
 /**
  * Takes in an object of countries and their capitals
@@ -135,7 +135,7 @@ const addsCountry = () => {};
 /**
  * Takes an array of arrays. First element of inner array is authorName, second element
  * of inner array is score.
- * Return an object where the keys are the autherNames and
+ * Return an object where the keys are the authorNames and
  * the values are the scores.
  * @param {array} - array of arrays [["Mark Twain", 8.9], ["Nathaniel Hawthorne", 5.1]]
  * @returns {object} - {"Mark Twain": 8.9, "Nathaniel Hawthorne": 5.1}
@@ -160,3 +160,93 @@ const bestScore = () => {};
  */
 
 const cubeObj = () => {};
+
+/**
+ * Takes in a string and returns an object with
+ * the number of a's and the number of e's.
+ * @param {string} - str: "A good snake"
+ * @returns {object} - counts of e and a. {a: 2, e: 1}
+ */
+
+const countAandE = () => {};
+
+/**
+ * Takes in a string and returns an object with
+ * the count occurrence of each character.
+ * @param {string} - str: "A good snake"
+ * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, " ": 2, s: 1, n:a, k:1, e: 1}
+ */
+
+const countOccurance = () => {};
+
+/**
+ * Takes in a string and returns an object with
+ * the count occurrence of each character.
+ * Skips spaces
+ * @param {string} - str: "A good snake"
+ * @returns {object} - counts of e and a. {a: 2, g: 1, o: 2, d:1, s: 1, n:a, k:1, e: 1}
+ */
+
+const countOccuranceNoSpaces = () => {};
+
+/**
+ * Takes in an array and returns the most common element.
+ * @param {array} - array of elements
+ * @returns {number || string} - most common element
+ */
+
+const mostCommonElement = () => {};
+
+/**
+ * Takes in an object and an array.
+ * Returns a new array.
+ * If the element in the array is a key in the object the new
+ * array should have the value in its place. Otherwise just use the array element.
+ *
+ * Exp Input:
+ * {"Ed Sheeran": "guitar", "Ray Charles": "piano"}
+ * ["Ed Sheeran", "John Lennon", "Ray Charles"]
+ *
+ * Output:
+ * ["guitar", "John Lennon", "piano"]
+ *
+ * @param {object}
+ * @param {array}
+ * @returns {array}
+ */
+
+const updateList = () => {};
+
+/**
+ * Takes in an object and a key. 
+ * It should delete the key value pair from the object and 
+ * return the changed object.
+ * @param {object}
+ * @param {string}
+ * @returns {object}
+ */
+
+ const deleteKey = () => {};
+
+module.exports = {
+  eveAppleCount,
+  appleCount,
+  eveAppleSet,
+  appleSet,
+  adamAndEveApples,
+  appleSum,
+  appleSetToZero,
+  russiaCapital,
+  getCapital,
+  addsJamaica,
+  addsCountry,
+  authorScores,
+  bestScore,
+  cubeObj,
+  countAandE,
+  countOccurance,
+  countOccuranceNoSpaces,
+  mostCommonElement,
+  updateList,
+  deleteKey,
+};
