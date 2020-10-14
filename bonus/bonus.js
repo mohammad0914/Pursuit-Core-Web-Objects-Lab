@@ -133,7 +133,7 @@ const pairs = () => {};
  *
  * Exp Output:
  * [
- * 'You already watched "Wonder Woman" directed by Patty Jenkins',
+ * 'You already watched "Wonder Woman" directed by Patty Jenkins.',
  * 'You still need to watch "Jaws" by director Steven Spielberg.'
  * ]
  *

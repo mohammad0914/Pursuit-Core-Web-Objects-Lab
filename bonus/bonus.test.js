@@ -47,8 +47,8 @@ describe("giveCatColor", () => {
       genus: "Felis",
       species: "Catus",
     };
-    const res = giveCatColor(cat2, "purple");
-    expect(res).toBe(cat2);
+    const res2 = giveCatColor(cat2, "purple");
+    expect(res2).toBe(cat2);
     expect(cat2["color"]).toBe("purple");
   });
 });
@@ -302,4 +302,56 @@ describe("movieList", () => {
       'You already watched "The Usual Suspects" directed by Bryan Singer.',
     ]);
   });
+});
+
+describe("mostFreqWordGreaterThanFive", () => {
+  test("returns an empty string when there is no word greater than 5 chars", () => {
+    expect(mostFreqWordGreaterThanFive("hi my name is corey")).toBe("");
+    expect(mostFreqWordGreaterThanFive("what is up?")).toBe("");
+  });
+
+  test("returns the most frequent word greater than 5 chars", () => {
+    expect(
+      mostFreqWordGreaterThanFive(
+        "Hamburger Cheese hello cheese cheese hamburger"
+      )
+    ).toBe("cheese");
+    expect(
+      mostFreqWordGreaterThanFive("ruby javascript ruby javascript ruby python")
+    ).toBe("javascript");
+  });
+});
+
+describe("mostFreqWordGreaterThanLength", () => {
+  test("returns an empty string when there is no word greater than length", () => {
+    expect(mostFreqWordGreaterThanLength("hi my name is corey", 5)).toBe("");
+    expect(mostFreqWordGreaterThanLength("whatss is up?", 6)).toBe("");
+  });
+
+  test("returns the most frequent word greater than length chars", () => {
+    expect(
+      mostFreqWordGreaterThanLength(
+        "Hamburger Cheese hello cheese cheese hamburger",
+        8
+      )
+    ).toBe("hamburger");
+    expect(
+      mostFreqWordGreaterThanLength(
+        "ruby javascript ruby javascript ruby python",
+        3
+      )
+    ).toBe("ruby");
+  });
+});
+
+describe("secondMostFrequentLetter", () => {
+  test("returns the second most frequent letter", () => {
+    expect(secondMostFrequentLetter("aabbbccdddd")).toBe("b")
+    expect(secondMostFrequentLetter("abbbccd")).toBe("c")
+  })
+  test("ignores non letters", () => {
+    expect(secondMostFrequentLetter("!!!..&;;    abb")).toBe("a")
+    expect(secondMostFrequentLetter("!!A!.bbb.&;;+=333343    a")).toBe("a")
+    
+  })
 });
