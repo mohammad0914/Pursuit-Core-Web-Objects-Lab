@@ -55,6 +55,7 @@ const objKeys2 = () => {};
 
 /**
  * Takes in an object and returns all the values as an array.
+ *  Must NOT use Object.values .
  * @param {object}
  * @returns {array} - all the keys from the object
  */
@@ -79,9 +80,9 @@ const objValues2 = () => {};
 const findDirectors = () => {};
 
 /**
- * Takes in an array of people objects with with properites
+ * Takes in an array of people objects with with properties
  * firstName and lastName. Return a new array that has
- * everybodys full name.
+ * everybody's full name.
  * firstName and lastName should be separated by one space only.
  * @param {array} - array of person objects.
  * @returns {array} - full names.
