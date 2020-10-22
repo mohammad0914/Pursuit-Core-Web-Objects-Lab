@@ -130,7 +130,7 @@ describe("eveAppleSet", () => {
 });
 
 describe("appleSet", () => {
-  test("updates Eve's apple count", () => {
+  test("updates the apple count", () => {
     expect(
       appleSet(
         {
@@ -148,7 +148,7 @@ describe("appleSet", () => {
       Corey: 10,
       Jimmy: 3,
       Ben: 5,
-      Eve: 5,
+      Eve: 7,
     });
     expect(
       appleSet(
@@ -167,7 +167,7 @@ describe("appleSet", () => {
       Corey: 5,
       Jimmy: 3,
       Ben: 5,
-      Eve: 10,
+      Eve: 7,
     });
   });
   test("doesn't loop through the object", () => {
@@ -507,9 +507,7 @@ describe("deleteKey", ()=> {
 
 describe("propertyCount", () => {
     test("returns the correct number of properites", () => {
-        expect(
-          propertyCount({ "Ed Sheeran": "guitar", "Ray Charles": "piano" }).toBe(2)
-        );
+        expect(propertyCount({ "Ed Sheeran": "guitar", "Ray Charles": "piano" })).toBe(2);
         expect(propertyCount({a: 2, b: 3, c: 1})).toBe(3)
         expect(propertyCount({})).toBe(0)
     })
