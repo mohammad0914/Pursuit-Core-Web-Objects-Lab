@@ -98,9 +98,10 @@ describe("objKeys", () => {
     ).toEqual(["name", "texture"]);
   });
 
-  test("does NOT use Object.keys", () => {
+  test("is implemented and oes NOT use Object.keys", () => {
     const funcString = objKeys.toString();
     expect(funcString.includes("Object.keys")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 describe("objKeys2", () => {
@@ -142,9 +143,10 @@ describe("objValues", () => {
     ).toEqual(["Hatchiko", "soft"]);
   });
 
-  test("does NOT use Object.values", () => {
+  test("is implemented and does NOT use Object.values", () => {
     const funcString = objValues.toString();
     expect(funcString.includes("Object.values")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 describe("objValues2", () => {
