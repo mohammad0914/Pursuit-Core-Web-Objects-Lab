@@ -45,9 +45,10 @@ describe("eveAppleCount", () => {
     ).toBe(7);
   });
 
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = eveAppleCount.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -78,9 +79,10 @@ describe("appleCount", () => {
       )
     ).toBe(3);
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = appleCount.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -123,9 +125,10 @@ describe("eveAppleSet", () => {
       Eve: 10,
     });
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = eveAppleSet.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -170,9 +173,10 @@ describe("appleSet", () => {
       Eve: 7,
     });
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = appleSet.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -197,9 +201,10 @@ describe("adamAndEveApples", () => {
       })
     ).toBe(40);
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = adamAndEveApples.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -275,9 +280,10 @@ describe("russiaCapital", () => {
     };
     expect(russiaCapital(citiesObj2)).toBe("This should be returned");
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = russiaCapital.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -292,9 +298,10 @@ describe("getCapital", () => {
 
     expect(getCapital(citiesObj, "Afghanistan")).toBe("Kabul");
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = getCapital.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -315,9 +322,10 @@ describe("addsJamaica", () => {
     let response = addsJamaica(citiesObj);
     expect(response).toBe(citiesObj);
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = addsJamaica.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
@@ -338,9 +346,10 @@ describe("addsCountry", () => {
       Jamaica: "Kingston",
     });
   });
-  test("doesn't loop through the object", () => {
+  test("is implemented and doesn't loop through the object", () => {
     const funcString = addsCountry.toString();
     expect(funcString.includes("for")).toBe(false);
+    expect(funcString === "() => {}").toBe(false)
   });
 });
 
