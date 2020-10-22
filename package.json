@@ -4,7 +4,7 @@
   "description": "Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.",
   "main": "lab.js",
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "jest --runInBand tests/",
     "bonus": "jest --runInBand bonus/bonus.test.js"
   },
   "repository": {
