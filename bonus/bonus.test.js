@@ -59,14 +59,12 @@ describe("catTexture", () => {
       catTexture({
         name: "Noboru",
         texture: "smooth",
-      }).toBe("smooth")
-    );
+      })).toBe("smooth")
     expect(
       catTexture({
         name: "Hatchiko",
         texture: "soft",
-      }).toBe("soft")
-    );
+      })).toBe("soft")
   });
 
   test("throws correct error when object contains on texture", () => {
@@ -242,8 +240,8 @@ describe("largestEarner", () => {
         Davies: [4008, 568, 300],
         Clark: [555, 457, 995, 806, 569, 46, 265],
         Johnson: [126, 300, 640, 255, 268],
-      }).toBe("Davies made $4876")
-    );
+      })
+    ).toBe("Davies made $4876")
     expect(
       largestEarner({
         Williams: [5, 1, 2, 1, 3],
@@ -251,8 +249,8 @@ describe("largestEarner", () => {
         Davies: [2, 2, 2],
         Clark: [3, 1, 1, 1, 1, 1, 1],
         Johnson: [6, 2, 1, 3, 1],
-      }).toBe("Cooper made $425")
-    );
+      })
+    ).toBe("Cooper made $425")
   });
 });
 
@@ -349,9 +347,9 @@ describe("secondMostFrequentLetter", () => {
     expect(secondMostFrequentLetter("aabbbccdddd")).toBe("b")
     expect(secondMostFrequentLetter("abbbccd")).toBe("c")
   })
-  test("ignores non letters", () => {
+  test("ignores non letters and ignores case", () => {
     expect(secondMostFrequentLetter("!!!..&;;    abb")).toBe("a")
     expect(secondMostFrequentLetter("!!A!.bbb.&;;+=333343    a")).toBe("a")
-    
+
   })
 });
